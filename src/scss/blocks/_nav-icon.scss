@@ -1,0 +1,54 @@
+.mobile-nav-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 99px;
+	background: rgb(235, 237, 242);
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.nav-icon-close {
+	display: none;
+	animation: rotateIcon 0.3s ease forwards; 
+}
+
+.nav-icon-close--active {
+	display: block;
+}
+
+.nav-icon-open {
+	display: block;
+	animation: rotateIcon 0.3s ease forwards; 
+}
+
+.nav-icon-open--active {
+	display: none;
+}
+
+.nav-icon-wrapper {
+	padding: 10px;
+}
+
+.nav-icon {
+	border-radius: var(--radius);
+}
+
+.mobile-nav-btn {
+	display: none;
+}
+
+@media (max-width: 1027.98px) {
+    .mobile-nav-btn {
+        display: block;
+		z-index: 999;
+    }
+}

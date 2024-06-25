@@ -1,0 +1,75 @@
+.header {
+    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 100; 
+
+
+    &__row {
+        padding: 24px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-radius: 99px;
+
+        box-shadow: 0px 2px 5px 0px rgba(212, 212, 212, 0.1),
+            0px 10px 10px 0px rgba(212, 212, 212, 0.09),
+            0px 21px 13px 0px rgba(212, 212, 212, 0.05),
+            0px 38px 15px 0px rgba(212, 212, 212, 0.01),
+            0px 59px 17px 0px rgba(212, 212, 212, 0);
+        background: rgb(255, 255, 255);
+    }
+
+    &__nav {
+        @media (max-width: 1027.98px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1027.98px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: var(--main-color);
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+    }
+
+    &__action {
+        color: var(--main-color);
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        border-radius: 99px;
+        background: #ebedf2;
+    }
+
+	&__contact {
+		padding: 16px 36px;
+	}
+
+	&__tel {
+		padding: 10px;
+	}
+}
