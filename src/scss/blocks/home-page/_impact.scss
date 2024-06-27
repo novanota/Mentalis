@@ -1,0 +1,87 @@
+.impact {
+    padding-bottom: 150px;
+
+    &__content {
+        position: relative;
+        padding-bottom: 150px;
+        padding-top: clamp(2.25rem, 1.617rem + 3.17vw, 5rem);
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        text-align: left;
+
+        @media (max-width: 1199.98px) {
+            align-items: start;
+        }
+
+        @media (max-width: 876.98px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 493.98px) {
+            display: flex;
+            flex-direction: column;
+            gap: 46px;
+        }
+
+        &-real {
+            max-width: 830px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            @media (max-width: 493.98px) {
+                max-width: 100%;
+            }
+        }
+
+        &-title {
+            color: #020c2a;
+            font-size: clamp(3rem, -2.294rem + 7.06vw, 5.25rem);
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: -1.3px;
+            margin-bottom: 36px;
+
+            @media (max-width: 1199.98px) {
+                font-size: clamp(2.5rem, 1.845rem + 1.54vw, 3rem);
+            }
+
+            @media (max-width: 876.98px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        &-subtitle {
+            color: #787878;
+            font-size: clamp(1.5rem, 0.324rem + 1.57vw, 2rem);
+            font-weight: 500;
+            line-height: 130%;
+            letter-spacing: -1.3px;
+
+            @media (max-width: 1199.98px) {
+                font-size: clamp(1rem, 0.345rem + 1.54vw, 1.5rem);
+            }
+        }
+    }
+
+    &__image--1 {
+        @media (max-width: 876.98px) {
+            max-width: clamp(12.438rem, 4.56rem + 39.39vw, 26.125rem);
+            max-height: clamp(11.563rem, 4.224rem + 36.69vw, 24.313rem);
+            position: absolute;
+            left: -150px;
+            top: 44px;
+        }
+
+        @media (max-width: 586.98px) {
+            left: -130px;
+        }
+
+        @media (max-width: 493.98px) {
+            position: static;
+        }
+    }
+
+}
