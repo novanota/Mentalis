@@ -3,7 +3,6 @@
 
     &__content {
         position: relative;
-        padding-bottom: 150px;
         padding-top: clamp(2.25rem, 1.617rem + 3.17vw, 5rem);
 
         display: grid;
@@ -37,12 +36,13 @@
         }
 
         &-title {
+            max-width: 100%;
             color: #020c2a;
             font-size: clamp(3rem, -2.294rem + 7.06vw, 5.25rem);
             font-weight: 500;
             line-height: 120%;
             letter-spacing: -1.3px;
-            margin-bottom: 36px;
+            // margin-bottom: 36px;
 
             @media (max-width: 1199.98px) {
                 font-size: clamp(2.5rem, 1.845rem + 1.54vw, 3rem);
@@ -83,5 +83,4 @@
             position: static;
         }
     }
-
 }
