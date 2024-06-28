@@ -1,5 +1,5 @@
 .innovation {
-    padding-top: 192px;
+    padding-top: clamp(6.25rem, 4.926rem + 6.62vw, 12rem);
 
     &__title {
         text-align: center;
