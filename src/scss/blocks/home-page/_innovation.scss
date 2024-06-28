@@ -1,0 +1,39 @@
+.innovation {
+    padding-top: 192px;
+
+    &__title {
+        text-align: center;
+        font-size: clamp(3rem, -2.294rem + 7.06vw, 5.25rem);
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -1.3px;
+        margin-bottom: clamp(1.5rem, 1.327rem + 0.86vw, 2.25rem);
+
+        @media (max-width: 1199.98px) {
+            font-size: clamp(2rem, 1.25rem + 1.54vw, 3rem);
+        }
+    }
+
+    &__subtitle {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        color: #787878;
+        font-size: clamp(1.5rem, 0.324rem + 1.57vw, 2rem);
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -1.3px;
+
+        @media (max-width: 1199.98px) {
+            font-size: clamp(1rem, 0.345rem + 1.54vw, 1.5rem);
+        }
+    }
+
+    &__image {
+        margin-top: clamp(1.5rem, 0.924rem + 2.88vw, 4rem);
+    }
+
+    &__img {
+        border-radius: 12px;
+    }
+}

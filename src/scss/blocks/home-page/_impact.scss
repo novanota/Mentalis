@@ -42,10 +42,10 @@
             font-weight: 500;
             line-height: 120%;
             letter-spacing: -1.3px;
-            // margin-bottom: 36px;
+            margin-bottom: 36px;
 
             @media (max-width: 1199.98px) {
-                font-size: clamp(2.5rem, 1.845rem + 1.54vw, 3rem);
+                font-size: clamp(2rem, 1.25rem + 1.54vw, 3rem);
             }
 
             @media (max-width: 876.98px) {
