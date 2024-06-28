@@ -1,0 +1,92 @@
+.statistics {
+    padding-top: clamp(6.25rem, 4.926rem + 6.62vw, 12rem);
+
+    &__title {
+        max-width: 422px;
+        font-size: clamp(3rem, -2.294rem + 7.06vw, 5.25rem);
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -1.3px;
+        margin-bottom: 36px;
+
+        @media (max-width: 1199.98px) {
+            font-size: clamp(2rem, 1.25rem + 1.54vw, 3rem);
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width: 1216.98px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            & > :nth-child(3) {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+
+            & > :nth-child(3) {
+                grid-column: span 1;
+            }
+        }
+    }
+
+    &__item {
+        padding: 16px;
+        border-radius: 12px;
+        background: rgb(255, 255, 255);
+    }
+
+    &__item-heading {
+        padding-bottom: 16px;
+        border-bottom: solid 1px rgba(2, 12, 42, 0.1);
+    }
+
+    &__item-number {
+        color: rgb(2, 12, 42);
+        font-size: 96px;
+        line-height: 120%;
+        letter-spacing: -1.3px;
+
+        @media (max-width: 1199.98px) {
+            font-size: clamp(3rem, -4.059rem + 9.41vw, 6rem);
+        }
+    }
+
+    &__item-title {
+        color: #020c2a;
+        font-size: clamp(1.125rem, 1.039rem + 0.43vw, 1.5rem);
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    &__item-text {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: #787878;
+        font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -1.3px;
+    }
+
+    &__item-img {
+        border-radius: 12px;
+
+        @media (max-width: 1216.98px) {
+            width: 100%;
+            max-height: 400px; 
+            object-fit: cover;
+            object-position: center;
+
+            @media (max-width: 644.98px) {
+                max-height: 300px;
+            }
+        }
+    }
+}

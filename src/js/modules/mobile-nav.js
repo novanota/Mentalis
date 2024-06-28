@@ -12,7 +12,7 @@ function mobileNav() {
         menuIconOpen.classList.toggle('nav-icon-open--active');
         menuIconClose.classList.toggle('nav-icon-close--active');
         mobileWrapper.classList.toggle('mobile-wrapper--active')
-        // document.body.classList.toggle('no-scroll');
+        document.body.classList.toggle('no-scroll');
     };
 
     // Close the mobile nav when a link is clicked
@@ -22,7 +22,7 @@ function mobileNav() {
             menuIconOpen.classList.remove('nav-icon-open--active');
             menuIconClose.classList.toggle('nav-icon-close--active');
             mobileWrapper.classList.remove('mobile-wrapper--active')
-            // document.body.classList.remove('no-scroll');
+            document.body.classList.remove('no-scroll');
         };
     });
 }
