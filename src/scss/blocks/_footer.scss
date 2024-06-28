@@ -1,14 +1,90 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+    border-radius: 24px 24px 0px 0px;
+    background: #fff;
 
-	h1 {
-		font-size: 32px;
+    &__container {
+        max-width: 1630px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        padding: clamp(1.5rem, 1.27rem + 1.15vw, 2.5rem) 0
+            clamp(1.5rem, 0.694rem + 4.03vw, 5rem) 0;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width: 1199.98px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+    }
+
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width: 522.98px) {
+            flex-wrap: wrap;
+        }
+
+		@media (max-width: 399.98px) {
+			flex-direction: column;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__link {
+        color: #020c2a;
+        font-size: clamp(0.875rem, 0.817rem + 0.29vw, 1.125rem);
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+	&__top-btn {
+		padding: 12px;
+		border: 1px solid rgb(2, 12, 42);
+        border-radius: 99px;
 	}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+    &__bottom {
+        margin-top: clamp(2.25rem, -0.254rem + 12.52vw, 13.125rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 1199.98px) {
+            flex-wrap: wrap;
+        }
+
+        &-title {
+            color: #020c2a;
+            font-size: clamp(2rem, 1.54rem + 2.3vw, 4rem);
+            font-weight: 500;
+            line-height: 100%;
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-link {
+            color: #020c2a;
+            font-size: clamp(0.75rem, 0.664rem + 0.43vw, 1.125rem);
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
 }

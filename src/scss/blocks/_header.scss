@@ -5,7 +5,7 @@
     z-index: 100;
 
     &__row {
-        padding: 24px;
+        padding: clamp(0.5rem, 0.27rem + 1.15vw, 1.5rem);
 
         display: flex;
         justify-content: space-between;
@@ -25,6 +25,12 @@
         @media (max-width: 1027.98px) {
             display: none;
         }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     &__list {

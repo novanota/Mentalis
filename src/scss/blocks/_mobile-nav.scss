@@ -41,6 +41,10 @@
 .mobile-nav--open {
     top: 100px;
     opacity: 1;
+
+    @media (max-width: 566.98px) {
+        top: 75px;
+    }
 }
 
 .mobile-nav a {
@@ -60,4 +64,10 @@
     & .active {
         opacity: 0.5;
     }
+}
+
+.mobile-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
