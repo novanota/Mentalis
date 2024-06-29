@@ -1,5 +1,11 @@
 .impact {
-    padding-bottom: clamp(6.25rem, 4.926rem + 6.62vw, 12rem);
+    @media (max-width: 876.98px) {
+        padding-bottom: clamp(6.25rem, 4.926rem + 6.62vw, 12rem);
+    }
+
+    @media (max-width: 493.98px) {
+        padding-bottom: 0;
+    }
 
     &__content {
         position: relative;

@@ -50,6 +50,11 @@
         line-height: 150%;
     }
 
+    &__top-link {
+        width: fit-content;
+        height: fit-content;
+    }
+
 	&__top-btn {
 		padding: 12px;
 		border: 1px solid rgb(2, 12, 42);
